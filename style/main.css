@@ -55,7 +55,7 @@ h1 i {
     padding: 1.5rem;
     margin-bottom: 2rem;
     min-height: 150px;
-    display: flex;
+    display: flex space-evenly;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
@@ -205,4 +205,88 @@ input:checked + .slider:before {
     h1 {
         font-size: 2rem;
     }
+}
+/* Player Management Styles */
+.player-management {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.add-player {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#player-name {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+#player-name:focus {
+    border-color: var(--truth-color);
+    outline: none;
+}
+
+.add-player-btn {
+    background-color: #6c5ce7;
+    padding: 0.8rem 1.2rem;
+}
+
+.player-list {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.player-list h3 {
+    margin-top: 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+#players {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#players li {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#players li .remove-player {
+    color: #ff6b6b;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 0;
+}
+
+.current-player {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color:black;
+}
+
+#question-display {
+    font-size: 1.2rem;
 }

@@ -10,9 +10,23 @@
 <body>
     <div class="container">
         <h1><i class="fas fa-gamepad"></i> Truth or Dare</h1>
+        <div class="player-management">
+            <div class="add-player">
+                <input type="text" id="player-name" placeholder="Enter player name">
+                <button id="add-player-btn" class="btn add-player-btn">
+                    <i class="fas fa-user-plus"></i> Add Player
+                </button>
+            </div>
+            <div class="player-list" id="player-list">
+                <h3>Players (<span id="player-count">0</span>)</h3>
+                <ul id="players"></ul>
+            </div>
+        </div>
         <div class="game-area">
             <div class="display" id="display">
-                <p>Select Truth or Dare to begin!</p>
+                <div id="current-player" class="current-player">No players yet</div>
+                <div id="question-display">Select Truth or Dare to begin!</div>
+                
             </div>
             <div class="buttons">
                 <button id="truth-btn" class="btn truth">
