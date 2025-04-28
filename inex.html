@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare Game</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-gamepad"></i> Truth or Dare</h1>
+        <div class="game-area">
+            <div class="display" id="display">
+                <p>Select Truth or Dare to begin!</p>
+            </div>
+            <div class="buttons">
+                <button id="truth-btn" class="btn truth">
+                    <i class="fas fa-comment-dots"></i> Truth
+                </button>
+                <button id="dare-btn" class="btn dare">
+                    <i class="fas fa-running"></i> Dare
+                </button>
+                <button id="random-btn" class="btn random">
+                    <i class="fas fa-random"></i> Surprise Me
+                </button>
+            </div>
+            <div class="settings">
+                <label class="switch">
+                    <input type="checkbox" id="nsfw-toggle">
+                    <span class="slider round"></span>
+                    <span class="label-text">NSFW Mode</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <audio id="clickSound" src="assets/sounds/click.mp3"></audio>
+    
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
