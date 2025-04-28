@@ -137,7 +137,7 @@ function showQuestion(type) {
             display.classList.add('dare');
         }
         
-        setTimeout(nextPlayer, 5000);
+        setTimeout(nextPlayer, 3000);
     } catch (error) {
         console.error('Game error:', error);
         questionDisplay.textContent = 'Something went wrong. Please try again.';
